@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    <head th:replace="~{layout/plantilla :: head}">
+        <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+        <title>Parallax Source</title>
+    </head>
+
+    <body>
+        <section th:fragment="IngresoUsuario">
+            <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card my-auto mx-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Inicio de Sesión</h5>
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="username" class="col-sm-3 col-form-label">Usuario:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="username">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="password" class="col-sm-3 col-form-label">Contraseña:</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                </form>
+                                <p><a href="#">¿Olvidó su contraseña?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card my-auto mx-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Crear una Cuenta</h5>
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="firstName" class="col-sm-3 col-form-label">Nombre:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="firstName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lastName" class="col-sm-3 col-form-label">Apellidos:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="lastName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-sm-3 col-form-label">Correo Electrónico:</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="phone" class="col-sm-3 col-form-label">Teléfono:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="confirmEmail" class="col-sm-3 col-form-label">Confirmar Correo Electrónico:</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="confirmEmail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="password" class="col-sm-3 col-form-label">Contraseña:</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="confirmPassword" class="col-sm-3 col-form-label">Confirmar Contraseña:</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" id="confirmPassword">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

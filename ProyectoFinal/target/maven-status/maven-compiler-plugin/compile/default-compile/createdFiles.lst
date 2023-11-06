@@ -1,0 +1,7 @@
+com\TrabajoFinal\TrabajoFinalApplication.class
+com\TrabajoFinal\ProjectConfig.class
+com\TrabajoFinal\domain\Proyectos.class
+com\TrabajoFinal\service\impl\ProyectosServiceImpl.class
+com\TrabajoFinal\service\ProyectosService.class
+com\TrabajoFinal\controller\ProyectosController.class
+com\TrabajoFinal\dao\ProyectosDao.class
