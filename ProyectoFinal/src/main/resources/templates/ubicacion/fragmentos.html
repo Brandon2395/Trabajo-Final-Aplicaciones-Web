@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>Parallax Source</title>      
+    </head>
+    
+    <body>
+        <section th:fragment="Ubicacion">
+            <div class="container mx-auto">
+                <div id="map-container-google-3" class="z-depth-1-half map-container-3 ">
+                    <iframe src="https://maps.google.com/maps?q=9.8660,-83.9200&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                            width="1200" 
+                            height="900" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

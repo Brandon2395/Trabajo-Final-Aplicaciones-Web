@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @Slf4j
-@RequestMapping("/usuario")
-public class UsuarioController {
+@RequestMapping("/ubicacion")
+public class UbicacionController {
     
     
    @GetMapping("listado")
-    public String getIngresoUsuario() {
-        return "/usuario/listado"; 
+    public String getUbicacion() {
+        return "/ubicacion/listado";
     }
 }
