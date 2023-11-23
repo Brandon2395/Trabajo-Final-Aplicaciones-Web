@@ -1,7 +1,13 @@
+com\TrabajoFinal\service\impl\ProyectosServiceImpl.class
+com\TrabajoFinal\controller\ContactoController.class
+com\TrabajoFinal\controller\UbicacionController.class
+com\TrabajoFinal\service\CorreoService.class
+com\TrabajoFinal\controller\ProyectosController.class
+com\TrabajoFinal\dao\ProyectosDao.class
+com\TrabajoFinal\domain\Contacto.class
+com\TrabajoFinal\controller\UsuarioController.class
 com\TrabajoFinal\TrabajoFinalApplication.class
 com\TrabajoFinal\ProjectConfig.class
 com\TrabajoFinal\domain\Proyectos.class
-com\TrabajoFinal\service\impl\ProyectosServiceImpl.class
 com\TrabajoFinal\service\ProyectosService.class
-com\TrabajoFinal\controller\ProyectosController.class
-com\TrabajoFinal\dao\ProyectosDao.class
+com\TrabajoFinal\service\impl\CorreoServiceImpl.class
