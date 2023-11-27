@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    
+<head th:replace="~{layout/plantilla :: head}">
+    <title>Parallax Source</title>
+    <!-- Descripción de Tecnologías -->
+    <meta name="description" content="Este sitio utiliza tecnologías como ReactJS, JavaScript, HTML, CSS en el frontend, y Node.js, Express, MongoDB en el backend.">
+    <style>
+        /* Estilos para la página informativa */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <section th:fragment="desarrolloSoftware">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="container">
+                <h1>Tecnologías Web y Desarrollo</h1>
+                <p>Este sitio utiliza una combinación de tecnologías para su desarrollo:</p>
+
+                <h2>Frontend</h2>
+                <ul>
+                    <li><strong>ReactJS:</strong> Un framework de JavaScript para construir interfaces de usuario.</li>
+                    <li><strong>JavaScript:</strong> Lenguaje de programación principal para la interactividad en la web.</li>
+                    <li><strong>HTML:</strong> Lenguaje de marcado para estructurar el contenido de las páginas web.</li>
+                    <li><strong>CSS:</strong> Lenguaje de estilos para el diseño y la presentación visual.</li>
+                </ul>
+
+                <h2>Backend</h2>
+                <ul>
+                    <li><strong>Node.js:</strong> Entorno de ejecución de JavaScript del lado del servidor.</li>
+                    <li><strong>Express:</strong> Framework de Node.js para construir aplicaciones web y APIs.</li>
+                    <li><strong>MongoDB:</strong> Base de datos NoSQL utilizada para almacenar datos.</li>
+                </ul>
+
+                <p>Estas tecnologías se combinan para ofrecer una experiencia interactiva y eficiente tanto para los usuarios como para el manejo de datos en el servidor.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

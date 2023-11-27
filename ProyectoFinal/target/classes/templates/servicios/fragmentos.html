@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    
+<head th:replace="~{layout/plantilla :: head}">
+    <title>Parallax Source</title>
+    <!-- Descripción de Tecnologías -->
+    <meta name="description" content="Los servicios que ofrecemos">
+   
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Estilo personalizado para flechas y texto del carrusel -->
+    <style>
+        .carousel-control-prev,
+        .carousel-control-next,
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            color: black; /* Cambia el color de las flechas */
+        }
+
+        .carousel-control-prev span,
+        .carousel-control-next span {
+            /* Estilo para hacer visible el texto "Previous" y "Next" en los botones */
+            display: block;
+            width: auto;
+            height: auto;
+            line-height: normal;
+            color: black; /* Cambia el color del texto "Previous" y "Next" a negro */
+        }
+    </style>
+</head>
+
+<body id="servi">
+    <section th:fragment="servicios">
+        <div class="container">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Servicios</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <!-- Agrega tantos indicadores como diapositivas tengas -->
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Desarrollo de Software</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Diseño de Experiencia de Usuario (UX/UI)</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agrega más diapositivas aquí -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span>Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span>Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS y Popper.js (Requeridos para el carrusel) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript personalizado para cambiar la velocidad del carrusel -->
+    <script>
+        var myCarousel = document.getElementById('carouselExampleIndicators');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000 // Cambia el intervalo a 2 segundos (2000 milisegundos)
+        });
+    </script>
+</body>
+
+</html>

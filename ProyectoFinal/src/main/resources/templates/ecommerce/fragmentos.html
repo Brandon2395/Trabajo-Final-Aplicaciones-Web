@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    
+<head th:replace="~{layout/plantilla :: head}">
+    <title>Plataforma eCommerce Innovadora</title>
+    <!-- Descripción de la Plataforma -->
+    <meta name="description" content="Descubre nuestra plataforma eCommerce innovadora que aprovecha la tecnología de vanguardia para redefinir las compras en línea.">
+    <style>
+        /* Estilos para la página informativa */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <section th:fragment="ecommerce">
+        <div class="container">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">eCommerce</h2><br/><br/><br/>
+ 
+            <ul>
+                <li><strong>1)Plataformas eCommerce:</strong><br/> Shopify, WooCommerce, Magento: Estas plataformas proporcionan una base sólida para la creación y gestión de tiendas en línea.</li><br/><br/>
+                <li><strong>2)Métodos de pago:</strong><br/> PayPal: Permite a los comerciantes aceptar pagos en línea de manera segura.</li><br/><br/>
+                <li><strong>3)Seguridad:</strong><br/> SSL, cifrado de datos, autenticación de dos factores: La seguridad es crítica en el eCommerce para proteger la información del cliente.</li><br/><br/>
+                <li><strong>4)Analítica y Seguimiento:</strong><br/> Google Analytics, Adobe Analytics: Proporcionan datos valiosos sobre el comportamiento del cliente y el rendimiento de la tienda.</li><br/><br/>
+                <li><strong>5)Integración de Logística:</strong><br/> Integración con servicios de envío y seguimiento de pedidos para garantizar una entrega eficiente.</li><br/><br/>
+                <li><strong>6)Chatbots y Soporte al Cliente:</strong><br/> Utilizar chatbots y sistemas de atención al cliente en tiempo real para brindar un servicio al cliente eficaz.</li><br/><br/>
+                <li><strong>7)Marketing Digital:</strong><br/> Publicidad en línea, marketing en redes sociales: Promocionar la tienda en línea y atraer a nuevos clientes.</li><br/><br/>
+                <li><strong>8)Métodos de Escalabilidad:</strong><br/> Cloud computing (AWS, Azure, Google Cloud): Permiten escalabilidad para manejar picos de tráfico.</li><br/><br/>
+                <li><strong>9)Gestión de Contenido:</strong><br/> Plataformas de gestión de contenido (CMS) como WordPress: Facilitan la administración de contenido y blogs.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
