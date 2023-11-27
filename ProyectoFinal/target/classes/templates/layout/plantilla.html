@@ -34,9 +34,12 @@
                                     Tecnología
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Desarrollo de Software</a></li>
-                                    <li><a class="dropdown-item" href="#">Ecommerce</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/desarrolloSoftware/listado}">Desarrollo de Software</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/ecommerce/listado}">Ecommerce</a></li>
                                 </ul>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" th:href="@{/servicios/listado}">Servicios</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link" th:href="@{/contacto/listado}">Contacto</a>
