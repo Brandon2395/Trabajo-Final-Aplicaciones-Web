@@ -5,6 +5,7 @@
 package com.TrabajoFinal.service;
 
 import com.TrabajoFinal.domain.Contacto;
+import jakarta.mail.MessagingException;
 
 /**
  *
@@ -12,4 +13,10 @@ import com.TrabajoFinal.domain.Contacto;
  */
 public interface CorreoService {
     void enviarCorreo(Contacto correoRequest);
+    
+    public void enviarCorreoHtml(
+            String para, 
+            String asunto, 
+            String contenidoHtml) 
+            throws MessagingException;
 }

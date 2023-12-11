@@ -47,11 +47,14 @@
                             <li class="nav-item px-2">
                                 <a class="nav-link"th:href="@{/ubicacion/listado}">Ubicación</a>
                             </li>
-                            <li class="nav-item px-2">
+                            <!--<li class="nav-item px-2">
                                 <a class="nav-link" th:href="@{/usuario/listado}">Ingresar</a>
-                            </li>
+                            </li>-->
                             <li class="nav-item px-2">
                                 <a class="nav-link" th:href="@{/proyectos/listado}">Proyectos</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" th:href="@{/usuario/listado}" sec:authorize="hasRole('ROLE_ADMIN')">Usuarios</a>
                             </li>
                             <li class="nav-item px-2">
                                 <a class="nav-link" th:href="@{/reportes/plantillareportes}">Reportes</a>
@@ -59,6 +62,28 @@
                             <li class="nav-item px-2">
                                 <a class="nav-link" thref="#" onclick="goToBottom()">Acerca</a>
                             </li>
+                            <ul class="navbar-nav" sec:authorize="!isAuthenticated()">
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/login}">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="navbar-nav" sec:authorize="isAuthenticated()">
+                            <li class="nav-item text-white my-auto">
+                                <span sec:authentication="name">Usuario</span>
+                            </li>
+                            <li class="nav-item my-auto">
+                                <form method="post" th:action="@{/logout}">
+                                    <button class="btn btn-dark">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </button>
+                                    
+                                </form>
+                            </li>
+                        </ul>
+                            
                         </ul>
                     </div>
                 </div>

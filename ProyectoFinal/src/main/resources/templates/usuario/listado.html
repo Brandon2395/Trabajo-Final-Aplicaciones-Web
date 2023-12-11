@@ -10,8 +10,13 @@
     </head>
     
     <body>
-        <header th:replace="~{layout/plantilla :: header}"/>
-        <section th:replace="~{usuario/fragmentos :: IngresoUsuario}"/>
-        <footer th:replace="~{layout/plantilla :: footer}"/>
+        <header th:replace="~{layout/plantilla :: header}"></header>
+
+        <section th:replace="~{usuario/fragmentos :: botonesAgregar}"></section>
+        <section th:replace="~{usuario/fragmentos :: agregarUsuario}"></section>
+        <section th:replace="~{usuario/fragmentos :: listadoUsuarios}"></section>
+        
+        <footer th:replace="~{layout/plantilla :: footer}"></footer>
+
     </body>
 </html>

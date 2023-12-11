@@ -76,12 +76,10 @@
                 <div class="row">
                     <div class="col-md-2">
                         <div class="card justify-content-center">
-                            <img src="https://cdn-icons-png.flaticon.com/512/6326/6326055.png" class="card-img-top" alt="...">
+                            <img th:src="@{${session.usuarioImagen}}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title justify-content-center">Usuario</h5>
-                                    <p class="card-text justify-content-center">Nombre</p>
-                                    <p class="card-text justify-content-center">Teléfono</p>
-                                    <p class="card-text justify-content-center">Correo</p>
+                                    <p class="card-text justify-content-center" sec:authentication="name">Nombre</p>
                                 </div>
                         </div>
                     </div>
@@ -110,7 +108,7 @@
                                             <td>[[${proyectos.comentarios}]]</td>
                                             <td th:text="${proyectos.activo} ? 'Activa' : 'Inactiva'" />
                                             <td><a th:href="@{/proyectos/eliminar/}+${proyectos.id}"
-                                                   class="btn btn-danger">
+                                                   class="btn btn-danger" sec:authorize="hasRole('ROLE_ADMIN')">
                                                     <i class="fas fa-trash"></i> Eliminar</a>
                                                 <a th:href="@{/proyectos/modificar/}+${proyectos.id}"
                                                    class="btn btn-success">
@@ -145,7 +143,7 @@
                                     <div class="col">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h4>[[#{accion.actualizar}]]</h4>
+                                                <h4>Actualizar Proyecto</h4>
                                             </div>
                                             <div class="card-body">
                                                 <div class="mb-3">
@@ -189,7 +187,7 @@
                     </div>
                     <div class="col-md-4 d-grid">                                
                         <a th:href="@{/proyectos/eliminar/}+${proyectos.id}"
-                           class="btn btn-danger">
+                           class="btn btn-danger" sec:authorize="hasRole('ROLE_ADMIN')">
                             <i class="fas fa-trash"></i> Eliminar
                         </a>
                     </div>
