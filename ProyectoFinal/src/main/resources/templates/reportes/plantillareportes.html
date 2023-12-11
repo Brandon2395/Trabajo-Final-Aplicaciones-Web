@@ -11,7 +11,7 @@
         <div class="container ml-auto">
             <div class="row"></div>
             <div class="row row-cols-3">
-                <div class="card">
+                <div class="card" sec:authorize="hasRole('ROLE_ADMIN')">
                     <div class="card-header text-center">
                         Reporte Usuarios
                     </div>
