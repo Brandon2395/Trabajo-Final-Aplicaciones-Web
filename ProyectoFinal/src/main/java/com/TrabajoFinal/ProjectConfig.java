@@ -77,7 +77,7 @@ public class ProjectConfig implements WebMvcConfigurer {
                 hasAnyRole("ADMIN","USER").requestMatchers("/usuario/listado").hasRole("ADMIN")).formLogin((form) -> 
                                         form.loginPage("/login").permitAll()).logout((logout) -> logout.permitAll());
         return http.build();
-    }
+    } /*Accesos a las diferentes pestañas, ya sea libre o con roles*/
     
     
     @Autowired
